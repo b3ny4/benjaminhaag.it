@@ -14,16 +14,23 @@
             font-family: "Roboto", sans-serif;
         }
         h1 {
-            font-size: 4em;
+            font-size: min(4rem,10vw);
         }
         h1, h2, h3, h4, h5, h6 {
             margin: 0.5em;
         }
         p {
-            padding: 2em 30%;
+            padding: 1em 2vw;
+        }
+        @media (min-width: 992px) {
+            p {
+                padding: 1em 30%;
+            }
         }
         main {
-            height: 100vh;
+            min-height: 100vh;
+            max-width: 2000px;
+            margin: 0 auto;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -36,6 +43,9 @@
             height: 1.5em;
             min-height: 25px;
             margin: .5em;
+        }
+        p:last-child {
+            padding-bottom: 2em;
         }
     </style>
 </head>
@@ -57,7 +67,9 @@
             If you're into tech, looking for insights, or just want to hang out with me, connect with me 🙂.
         </p>
         <p>🚧 This page is still under construction 🚧</p>
-        <a href="https://buymeacoffee.com/benjaminhaag" target="_blank">☕️ But you can buy me a coffee ☕️</a>
+        <p>
+            <a href="https://buymeacoffee.com/benjaminhaag" target="_blank">☕️ But you can buy me a coffee ☕️</a>
+        </p>
     </main>
 </body>
 </html>
